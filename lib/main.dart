@@ -17,7 +17,7 @@ class MainApp extends StatefulWidget {
   static void getData() {
     HomeScreen.moneyList.clear();
     Box<Money> hiveBox = Hive.box<Money>('moneyBox');
-    for (var element in hiveBo  x.values) {
+    for (var element in hiveBox.values) {
       HomeScreen.moneyList.add(element);
     }
   }
